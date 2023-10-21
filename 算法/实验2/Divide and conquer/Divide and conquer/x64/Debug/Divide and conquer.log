@@ -1,0 +1,4 @@
+﻿  源.cpp
+C:\Users\Sindger\source\repos\Divide and conquer\Divide and conquer\源.cpp(46,17): warning C4101: “y”: 未引用的局部变量
+C:\Users\Sindger\source\repos\Divide and conquer\Divide and conquer\源.cpp(46,9): warning C4101: “x”: 未引用的局部变量
+  Divide and conquer.vcxproj -> C:\Users\Sindger\source\repos\Divide and conquer\x64\Debug\Divide and conquer.exe
