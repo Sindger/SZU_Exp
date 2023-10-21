@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>json03.html</title>
+        <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+        <script type="text/javascript" src="js/json.js"></script>
+        <script type="text/javascript">
+            function jsStrToObj() {
+                var str = '{"name":"张欣杰","age":20}';
+                //不需要js文件转换为json对象
+                var obj = JSON.parse(str);
+                //访问该对象的name属性值并以网页消息弹出显示
+                alert(obj.name);
+            }
+            function jsStrToArr() {
+                var str = '[ {"StuNumber":2020151011,"name":"何立立"},' +
+                    ' {"StuNumber":2020151022,"name":"赵多多"}]';
+                var arr = eval("("+str+")");
+                alert(arr[1].name);
+            }
+            function jsObjToStr() {
+                var score = {"StuNumber":2020151091, "name":"张欣杰",
+                    'scores':[  {"course":"中间件技术", "grade":90},
+                        {"course":"数据结构", "grade":86},
+                        {"course":"计算机网络", "grade":80}]};
+                //不需要js文件将json对象转换为json字符串
+                var str = JSON.stringify(score);
+                alert(str);
+            }
+        </script>
+    </head>
+    <body>
+        <a href="javascript:;" onclick="jsStrToObj();">JSON字符串转换为对象</a>
+        </br>
+        <a href="javascript:;" onclick="jsStrToArr();">JSON字符串转换为JSON数组</a>
+        </br>
+        <a href="javascript:;" onclick="jsObjToStr();">JSON对象转换为JSON字符串</a>
+    </body>
+</html>

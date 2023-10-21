@@ -1,0 +1,4 @@
+﻿cl : 命令行 warning D9035: “Gm”选项已否决，并将在将来的版本中移除
+  ImageProcessing.cpp
+C:\Users\Sindger\Desktop\实验06：ImageProcessing\ImageProcessing.cpp(450,2): warning C4996: 'getcwd': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getcwd. See online help for details.
+  ImageProcessing.vcxproj -> C:\Users\Sindger\Desktop\实验06：ImageProcessing\Debug\ImageProcessing.exe

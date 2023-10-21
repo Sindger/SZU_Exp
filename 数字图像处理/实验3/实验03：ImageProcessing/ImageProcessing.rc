@@ -1,0 +1,223 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_IMAGEPROCESSING     ICON                    "ImageProcessing.ICO"
+
+IDI_SMALL               ICON                    "SMALL.ICO"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_IMAGEPROCESSING MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    MENUITEM "显示RAW图像",                     IDM_SHOWRAWIMAGE
+    MENUITEM "显示BMP图像",                     IDM_SHOWBMPIMAGE
+    POPUP "RAW图像特效显示"
+    BEGIN
+        POPUP "开关门特效"
+        BEGIN
+            MENUITEM "中间往两边开门",                     ID_32780
+            MENUITEM "两边往中间关门",                     ID_32781
+            MENUITEM "中间往上下开门",                     ID_32782
+            MENUITEM "上下往中间关门",                     ID_32783
+        END
+        POPUP "百叶窗特效"
+        BEGIN
+            MENUITEM "向左显示",                        ID_32785
+            MENUITEM "向右显示",                        ID_32786
+            MENUITEM "向上显示",                        ID_32787
+            MENUITEM "向下显示",                        ID_32788
+        END
+        POPUP "淡入淡出特效"
+        BEGIN
+            MENUITEM "淡入显示",                        ID_32789
+            MENUITEM "淡出显示",                        ID_32790
+        END
+    END
+    POPUP "BMP图像特效显示"
+    BEGIN
+        POPUP "开关门特效"
+        BEGIN
+            MENUITEM "中间往两边开门",                     ID_32794
+            MENUITEM "两边往中间关门",                     ID_32795
+            MENUITEM "中间往上下开门",                     ID_32796
+            MENUITEM "上下往中间关门",                     ID_32797
+        END
+        POPUP "百叶窗特效"
+        BEGIN
+            MENUITEM "向左显示",                        ID_32798
+            MENUITEM "向右显示",                        ID_32799
+            MENUITEM "向上显示",                        ID_32800
+            MENUITEM "向下显示",                        ID_32801
+        END
+        POPUP "淡入淡出特效"
+        BEGIN
+            MENUITEM "淡入显示",                        ID_32802
+            MENUITEM "淡出显示",                        ID_32803
+        END
+    END
+    MENUITEM "直方图",                         IDM_HISTOGRAMSHOW
+    POPUP "图像灰度变换"
+    BEGIN
+        MENUITEM "灰度均衡化",                       IDM_EqualHist
+        MENUITEM "二值化",                         IDM_THRESHOLD
+        MENUITEM "反变换",                         32821
+        MENUITEM "对数变换",                        IDM_Log
+        MENUITEM "幂次变换",                        IDM_Pow
+        MENUITEM "对比度拉伸",                       IDM_Contrast
+        MENUITEM "灰度切割",                        IDM_GrayCut
+        MENUITEM "位图切割",                        IDM_BitCut
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_IMAGEPROCESSING ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 230, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    ICON            IDI_IMAGEPROCESSING,IDC_MYICON,14,9,20,20
+    LTEXT           "ImageProcessing Version 1.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "ImageProcessing"
+    IDS_HELLO               "Hello World!"
+    IDC_IMAGEPROCESSING     "IMAGEPROCESSING"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

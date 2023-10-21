@@ -1,0 +1,5 @@
+S,T
+a,b,c,d,e
+S->aSb,S->T
+T->cTd,T->e
+S

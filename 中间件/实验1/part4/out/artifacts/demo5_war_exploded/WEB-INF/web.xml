@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>addBanner</servlet-name>
+        <servlet-class>addBanner</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addBanner</servlet-name>
+        <url-pattern>/addBanner</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ParseRequest</servlet-name>
+        <servlet-class>ParseRequest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ParseRequest</servlet-name>
+        <url-pattern>/ParseRequest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showBanner</servlet-name>
+        <servlet-class>showBanner</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showBanner</servlet-name>
+        <url-pattern>/showBanner</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>showImage</servlet-name>
+        <servlet-class>showImage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showImage</servlet-name>
+        <url-pattern>/showImage</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,5 @@
+num=int(input("Enter an integer:"))
+T1=bool(num%5==0 and num%7==0)
+T2=bool(num%5==0 or num%7==0)
+T3=bool((num%5==0 or num%7==0)and(num%5!=0 or num%7!=0))
+print("Is 35 divisible by 5 and 7?",T1,"\nIs 35 divisible by 5 or 7?",T2,"\nIs 35 divisible by 5 or 7, but not both?",T3)

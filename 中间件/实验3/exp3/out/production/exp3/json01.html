@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>json01.html</title>
+        <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+        <script type="text/javascript">
+            function f1() {
+                var obj = {'name':'张欣杰','age':20};
+                alert("name:" + obj.name + "\nage:" + obj.age);
+            }
+            function f2() {
+                var obj = {'name':'张欣杰',
+                    'address':{
+                        'city':'Shenzhen',
+                        'street':'冬筑',
+                        'room':1433 }};
+                alert("name:" + obj.name + "\ncity:" + obj.address.city +
+                "\nstreet:" + obj.address.street +"\nroom:" + obj.address.room);
+            }
+        </script>
+    </head>
+
+    <body>
+        <!--创建JavaScript对象并查看属性-->
+        <a href="javascript:;" onclick="f1();">查看对象属性1</a>
+        </br>
+        <a href="javascript:;" onclick="f2();">查看对象属性2</a>
+    </body>
+</html>

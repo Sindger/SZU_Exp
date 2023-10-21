@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>json02.html</title>
+        <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+        <script type="text/javascript">
+            function f3() {
+                var students = [ {'StuNumber':2020151011, 'name':'何立立'},
+                    {'StudentNumber':2020151022, 'name':'赵多多'},
+                    {'StudentNumber':2020151091, 'name':'张欣杰'}];
+                alert('学号:' + students[2].StudentNumber + "\n姓名:" + students[2].name);
+            }
+            function f4() {
+                var score = {'StuNumber':2020151091, 'name':'张欣杰',
+                    'scores':[  {'course':"中间件技术", 'grade':90},
+                        {'course':"数据结构", 'grade':86},
+                        {'course':"计算机网络", 'grade':80}]};
+                //显示score中的所有信息
+                alert('学号:' + score.StuNumber + "\n姓名:" + score.name +
+                    "\n课程:" + score.scores[0].course + " 成绩:" + score.scores[0].grade +
+                    "\n课程:" + score.scores[1].course + " 成绩:" + score.scores[1].grade +
+                    "\n课程:" + score.scores[2].course + " 成绩:" + score.scores[2].grade);
+            }
+        </script>
+    </head>
+    <body>
+<!--创建JavaScript对象并查看属性-->
+        <a href="javascript:;" onclick="f3();">查看students数组中你的对象属性</a>
+        </br>
+        <a href="javascript:;" onclick="f4();">查看你的学号和姓名以及你的成绩信息</a>
+    </body>
+</html>
